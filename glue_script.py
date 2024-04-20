@@ -25,7 +25,7 @@ df = glueContext.create_dynamic_frame.from_options(
 
 
 # Convert to JSON format
-json_path = "s3://myfirstbucketfore2eproject/output/target_data.json"
+json_path = "s3://myfirstbucketfore2eproject/input/target-data.json"
 glueContext.write_dynamic_frame.from_options(
     frame=df,
     connection_type="s3",
